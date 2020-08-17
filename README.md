@@ -1,7 +1,7 @@
 # Trabajo-Practico
-#
-#
-##Memoria-Descriptiva
+
+
+## Memoria-Descriptiva
 
 Voltaje y corriente ingresados: El voltaje se le solicita al usuario al igual que el límite de corriente. 
 
