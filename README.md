@@ -3,9 +3,9 @@
 
 ## Memoria-Descriptiva
 
-Voltaje y corriente ingresados: El voltaje se le solicita al usuario al igual que el límite de corriente. 
+Voltaje y corriente ingresados: El voltaje(Vset) se le solicita al usuario al igual que el límite de corriente(Imáx). 
 
-Carga de la fuente: Se simula la carga colocando el usuario un valor en ohms.
+Carga de la fuente: Se simula la carga colocando el usuario un valor en ohms(R).
 
 Control de corriente excedida: Es una función que medio de la ley de Ohm obtiene la corriente que entregará la fuente y la compara con el límite establecido. Si se supera devuelve un 1, caso contrario un 0.
 
