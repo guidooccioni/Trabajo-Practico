@@ -16,4 +16,5 @@ Indicador de corriente excedida: Si recibe un 1 del control de voltaje, aparece 
 Indicador de voltaje y corriente reales: Entrega los valores reales con los que se esta trabajando.
 
 ## Diagrama
-![Captura de pantalla (142)](https://user-images.githubusercontent.com/67933711/90553123-3c240d00-e16a-11ea-9b54-e048b163582d.png)
+![Captura de pantalla (144)](https://user-images.githubusercontent.com/67933711/90553411-b785be80-e16a-11ea-864b-d5924ac2148c.png)
+
