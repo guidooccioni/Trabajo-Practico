@@ -1,5 +1,5 @@
-# Trabajo-Practico
-
+## Trabajo-Practico
+Máquina de estados de una fuente de tensión con control de corriente.
 
 ## Memoria-Descriptiva
 
