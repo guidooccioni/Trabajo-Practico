@@ -20,8 +20,6 @@ Valores_t cargaVI(Valores_t val);
 
 Valores_t cargaR(Valores_t val);
 
-int disminuir(acciones_t);
-
-
+#define Reducir(V) V*0,8
 
 #endif
