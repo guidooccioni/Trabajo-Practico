@@ -21,7 +21,7 @@ Valores_t cargaR(Valores_t val)
 
 Valores_t disminuir(Valores_t val)
 {
-    val.Vo = val.Vo * 0.8;
+    Reducir(val.Vo);
     val.Io = val.Vo / val.Rset;
 	return (val);
 }
