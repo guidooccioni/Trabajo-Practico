@@ -2,11 +2,7 @@
 #define LIB_TP
 
 #include <stdio.h>
-
-typedef enum {
-  mantener = 0,
-  reducir = 1
-}acciones_t;
+#include <conio.h>
 
 typedef struct {
   float Vset;       // tensión seteada
@@ -14,12 +10,13 @@ typedef struct {
   float Vo;        // tensión que entrega la fuente
   float Io;        // corriente de la fuente
   float Rset;       // resistencia seteada
+  float Estado;
 }Valores_t;
 
-Valores_t cargaVI(Valores_t val);
-
+Valores_t cargaV(Valores_t val);
+Valores_t cargaI(Valores_t val);
 Valores_t cargaR(Valores_t val);
-
-#define Reducir(V) V*0,8
-
+Valores_t disminuir(Valores_t val);
+Valores_t reset(Valores_t val);
+Valores_t estado(Valores_t val);
 #endif
