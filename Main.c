@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 	val = cargaI(val);
 	if (sel == 3)
 	val = cargaR(val); 	
-	val = estado(val);
+	val = estado(val);  // Función estado, compara Io con Imáx, mientras Io sea mayor q la corriente límite, llama a la función reducir 
 	printf("\nVset:%f\nVo:%f\nImax:%f\nIo:%f\nRset:%f",val.Vset,val.Vo,val.Imax,val.Io,val.Rset);
 	printf("\nSeleccion:");
 }
