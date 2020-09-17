@@ -1,25 +1,27 @@
+#include <iostream>
 #include "LIB_TP.h"
 Valores_t val;
 
-int main()
-{	   int r = 0;
-	   int c = 0;	
-  while (r == 0)
-  {
-      Valores_t cargaVI;			/* Cargo Vset e Imáx */
-      while (c == 0)				/* Con Vset e Imáx fijas, selecciono una carga, y si Io excede a Imáx reduzco Vo */
-	  { 
-        Valores_t cargaR;			/* Cargo Rset */
-        while (val.Io > val.Imax)	/* Mientras que Io sea mayor que Imáx, reduzco porcentualmente a Vo */
-        {
-          Valores_t disminuir;		/* Reduzco Vo, y recalculo Io */
-        }
-        printf(" Si desea colocar otra carga presione 0, si no otro numero\t");
-       	scanf("%d",&c);
-      } 
-        printf(" Si desea  variar Vset y/o Imax presione 0,  si no otro numero\t");
-        scanf("%d",&r);
-  }
-   
-
+int main(int argc, char** argv) 
+{
+	val.Rset=1000000;
+	val.Imax = 5;
+	int sel=0;
+	while(sel!=9)
+	{printf("Seleccione magnitud:\n");
+	printf("1.Tension\n2.Ilimite\n3.Carga\n4.valoresreales\n9.salir\n\n seleccion:");
+	fflush(stdin);
+	scanf("%d",&sel);
+	system ("cls");
+	if (sel ==1)
+	val = cargaV(val);
+	if (sel == 2)
+	val = cargaI(val);
+	if (sel == 3)
+	val = cargaR(val); 	
+	val = estado(val);
+	printf("\nVset:%f\nVo:%f\nImax:%f\nIo:%f\nRset:%f",val.Vset,val.Vo,val.Imax,val.Io,val.Rset);
+	printf("\nSeleccion:");
+}
+	return 0;
 }
