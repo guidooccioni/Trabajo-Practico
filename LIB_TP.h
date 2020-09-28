@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include <conio.h>
 
+typedef enum {
+	Tension = 1, 		 
+	Corriente = 2,		
+	Resistencia = 3,	
+}menu_t;
+
 typedef struct {
   float Vset;       // tensión seteada
   float Imax;       // corriente máxima
